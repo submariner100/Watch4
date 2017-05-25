@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="12029"/>
+    </dependencies>
+    <scenes>
+        <!--WatchFX-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="Home" title="WatchFX" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch4_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label height="0.33000000000000002" alignment="center" text="1000" id="TYW-Qr-27U">
+                            <fontDescription key="font" type="system" pointSize="52"/>
+                        </label>
+                        <slider width="1" height="0.33000000000000002" alignment="left" continuous="YES" value="500" maximum="1000" steps="50" id="Qba-1r-Wo0">
+                            <connections>
+                                <action selector="amountChanged:" destination="AgC-eL-Hgc" id="VPD-VZ-t6I"/>
+                            </connections>
+                        </slider>
+                        <group width="1" height="0.33000000000000002" alignment="left" id="JQ5-jn-8VW">
+                            <items>
+                                <picker width="0.59999999999999998" height="1" alignment="left" focusStyle="stack" id="uCl-q2-kAI">
+                                    <connections>
+                                        <action selector="baseCurrencychanged:" destination="AgC-eL-Hgc" id="Xha-Qn-paP"/>
+                                    </connections>
+                                </picker>
+                                <button width="0.40000000000000002" height="1" alignment="left" title="Go" id="s9S-bc-UrJ">
+                                    <connections>
+                                        <action selector="convertTapped" destination="AgC-eL-Hgc" id="K9m-bi-Zql"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="amountLabel" destination="TYW-Qr-27U" id="Wai-sA-bEf"/>
+                        <outlet property="amountSlider" destination="Qba-1r-Wo0" id="7gP-12-FLm"/>
+                        <outlet property="currencyPicker" destination="uCl-q2-kAI" id="mz4-RB-EU6"/>
+                        <segue destination="hLx-oN-PJ4" kind="relationship" relationship="nextPage" id="auC-Ww-auq"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-30" y="39"/>
+        </scene>
+        <!--Currencies-->
+        <scene sceneID="uzZ-Qq-BFn">
+            <objects>
+                <controller identifier="Currencies" title="Currencies" id="hLx-oN-PJ4" customClass="CurrenciesInterfaceController" customModule="Watch4_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="Xud-UQ-X1x">
+                            <items>
+                                <tableRow identifier="Row" id="ERB-sr-hAZ" customClass="CurrencyRow" customModule="Watch4_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="uYH-am-yNi">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="2kf-f2-aJf"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="group" destination="uYH-am-yNi" id="uIv-Jc-UKq"/>
+                                        <outlet property="textLabel" destination="2kf-f2-aJf" id="JOd-R9-1kI"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="Xud-UQ-X1x" id="IFJ-5F-dvH"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="250" y="39"/>
+        </scene>
+    </scenes>
+</document>
