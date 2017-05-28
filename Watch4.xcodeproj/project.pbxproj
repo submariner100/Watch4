@@ -151,8 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				2719AE6F1ED773B40028F31F /* CurrencyRow.swift */,
-				2719AE5B1ED76B630028F31F /* InterfaceController.swift */,
 				2719AE711ED7759F0028F31F /* CurrenciesInterfaceController.swift */,
+				2719AE5B1ED76B630028F31F /* InterfaceController.swift */,
 				2719AE5D1ED76B630028F31F /* ExtensionDelegate.swift */,
 				2719AE5F1ED76B630028F31F /* Assets.xcassets */,
 				2719AE611ED76B630028F31F /* Info.plist */,
@@ -567,6 +567,7 @@
 				2719AE661ED76B630028F31F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2719AE681ED76B630028F31F /* Build configuration list for PBXNativeTarget "Watch4 WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -575,6 +576,7 @@
 				2719AE6A1ED76B630028F31F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2719AE6C1ED76B630028F31F /* Build configuration list for PBXNativeTarget "Watch4" */ = {
 			isa = XCConfigurationList;
@@ -583,6 +585,7 @@
 				2719AE6E1ED76B630028F31F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
