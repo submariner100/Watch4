@@ -47,6 +47,43 @@
             </objects>
             <point key="canvasLocation" x="-30" y="39"/>
         </scene>
+        <!--Results-->
+        <scene sceneID="6jS-Qv-tYy">
+            <objects>
+                <controller identifier="Results" id="ta3-Ec-CSe" customClass="ResultsInterfaceController" customModule="Watch4_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" hidden="YES" id="Oxw-Rv-5sr">
+                            <items>
+                                <tableRow identifier="Row" selectable="NO" id="pGO-9Z-DSP" customClass="CurrencyRow" customModule="Watch4_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="pC4-Ex-zCq">
+                                        <items>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="lWW-ls-wCp"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="group" destination="pC4-Ex-zCq" id="3F3-K4-QWR"/>
+                                        <outlet property="textLabel" destination="lWW-ls-wCp" id="jOx-lJ-yIG"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <button width="1" alignment="left" hidden="YES" title="Done" id="4ie-De-HC4">
+                            <color key="backgroundColor" red="0.430908203125" green="0.56797960069444442" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="doneTapped" destination="ta3-Ec-CSe" id="USB-Vp-NUp"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" verticalAlignment="center" text="Fetching..." id="TB9-7Z-p7G"/>
+                    </items>
+                    <connections>
+                        <outlet property="done" destination="4ie-De-HC4" id="WFT-uE-KeY"/>
+                        <outlet property="status" destination="TB9-7Z-p7G" id="cSp-ix-QBa"/>
+                        <outlet property="table" destination="Oxw-Rv-5sr" id="NIO-gi-pWH"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-28" y="321"/>
+        </scene>
         <!--Currencies-->
         <scene sceneID="uzZ-Qq-BFn">
             <objects>

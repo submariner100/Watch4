@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271400B61EDF5A8D00DB4A16 /* ResultsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271400B51EDF5A8D00DB4A16 /* ResultsInterfaceController.swift */; };
 		2719AE391ED76B620028F31F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2719AE381ED76B620028F31F /* AppDelegate.swift */; };
 		2719AE3B1ED76B620028F31F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2719AE3A1ED76B620028F31F /* ViewController.swift */; };
 		2719AE3E1ED76B620028F31F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2719AE3C1ED76B620028F31F /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 		2719AE601ED76B630028F31F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2719AE5F1ED76B630028F31F /* Assets.xcassets */; };
 		2719AE701ED773B40028F31F /* CurrencyRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2719AE6F1ED773B40028F31F /* CurrencyRow.swift */; };
 		2719AE721ED7759F0028F31F /* CurrenciesInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2719AE711ED7759F0028F31F /* CurrenciesInterfaceController.swift */; };
+		27D162C61EE1F918000F93DA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27D162C51EE1F918000F93DA /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		271400B51EDF5A8D00DB4A16 /* ResultsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsInterfaceController.swift; sourceTree = "<group>"; };
 		2719AE351ED76B620028F31F /* Watch4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch4.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2719AE381ED76B620028F31F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2719AE3A1ED76B620028F31F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +87,7 @@
 		2719AE611ED76B630028F31F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2719AE6F1ED773B40028F31F /* CurrencyRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrencyRow.swift; sourceTree = "<group>"; };
 		2719AE711ED7759F0028F31F /* CurrenciesInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrenciesInterfaceController.swift; sourceTree = "<group>"; };
+		27D162C51EE1F918000F93DA /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,10 +156,12 @@
 			children = (
 				2719AE6F1ED773B40028F31F /* CurrencyRow.swift */,
 				2719AE711ED7759F0028F31F /* CurrenciesInterfaceController.swift */,
+				271400B51EDF5A8D00DB4A16 /* ResultsInterfaceController.swift */,
 				2719AE5B1ED76B630028F31F /* InterfaceController.swift */,
 				2719AE5D1ED76B630028F31F /* ExtensionDelegate.swift */,
 				2719AE5F1ED76B630028F31F /* Assets.xcassets */,
 				2719AE611ED76B630028F31F /* Info.plist */,
+				27D162C51EE1F918000F93DA /* SwiftyJSON.swift */,
 			);
 			path = "Watch4 WatchKit Extension";
 			sourceTree = "<group>";
@@ -307,8 +313,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271400B61EDF5A8D00DB4A16 /* ResultsInterfaceController.swift in Sources */,
 				2719AE5E1ED76B630028F31F /* ExtensionDelegate.swift in Sources */,
 				2719AE701ED773B40028F31F /* CurrencyRow.swift in Sources */,
+				27D162C61EE1F918000F93DA /* SwiftyJSON.swift in Sources */,
 				2719AE721ED7759F0028F31F /* CurrenciesInterfaceController.swift in Sources */,
 				2719AE5C1ED76B630028F31F /* InterfaceController.swift in Sources */,
 			);
